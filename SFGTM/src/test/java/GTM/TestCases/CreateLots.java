@@ -20,6 +20,7 @@ public class CreateLots extends BaseClass {
         logger.pass("LogIn Success");
         TenderModule.SearchTenderByName(driver, TenderName);
         logger.pass("Searching Sucess");
+        //Changes done by Srikar for Git
         TenderModule.LotsDetails(driver);
         logger.pass("New Sucess");
         

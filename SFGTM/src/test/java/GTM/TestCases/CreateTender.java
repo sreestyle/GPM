@@ -18,7 +18,7 @@ public class CreateTender extends BaseClass{
         ExcelDataProvider.setExcelFile("Login");
         logger.info("Starting Application");
         logIN(ExcelDataProvider.getCellData(1,0),ExcelDataProvider.getCellData(1,1));
-        logger.pass("LogIn Success");
+       // logger.pass("LogIn Success");
         TenderModule.CreateTenderByName(driver,ExcelDataProvider.getCellData(1,2));
         logOut();
         
